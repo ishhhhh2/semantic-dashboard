@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Enterprise Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body>
+
+    <header>
+     <h1> Enterprise Dashboard</h1>
+
+    <nav aria-label="Main navigation">
+     <a href="index.html"> Dashboard</a>  
+     <a href="users.html"> Users</a>
+     <a href="reports.html"> Reports</a>
+     <a href="settings.html"> Settings</a> 
+        
+
+    </nav>
+    </header>
+
+    <aside>
+
+        <h2> Dashboard Menu</h2>
+
+        <nav aria-label="Dashboard Navigation">
+            <ul>
+                <li> 
+                    <a href="index.html"> Dashboard</a>
+
+                </li>
+
+                  <li>
+                <a href="users.html">Users</a>
+            </li>
+            <li>
+                <a href="reports.html">Reports</a>
+            </li>
+            <li>
+                <a href="settings.html">Settings</a>
+            </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+
+        <h2> Dashboard Overview</h2>
+        
+        <p>
+            Welcome to the Enterprise Dashboard. 
+            Here you can monitor users, reports, and system activity.
+        </p>
+
+        <section>
+         <h3> Key Statistics</h3>
+         <article class="stat-card">
+            <h4> Total Users</h4>
+            <p>1,250</p>
+         </article>
+
+         <article class="stat-card">
+        <h4>Active Reports</h4>
+        <p>86</p>
+    </article>
+
+    <article class="stat-card">
+        <h4>System Alerts</h4>
+        <p>12</p>
+    </article>
+        
+        </section>
+
+        <section>
+            <h3>Recent Users</h3>
+            <table>
+                <caption> Recently registered users</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Aarav Sharma</td>
+                        <td>aarav@example.com</td>
+                        <td>Active</td>
+                    </tr>
+
+                    <tr>
+                        <td> Priya Verma </td>
+                        <td> priya@example.com </td>
+                        <td> Active</td>
+                    </tr>
+
+                    <tr> 
+                        <td> Rahul Mehta</td>
+                        <td>rahul@example.com</td>
+                        <td>Inactive</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <section> 
+            <h3>Add New User</h3>
+
+            <form>
+                <fieldset>
+                    <legend> User Information</legend>
+                
+                <p>
+                    <label for="full-name"> Full Name</label>
+                    <input
+    type="text"
+    id="full-name"
+    name="full-name"
+    required
+    minlength="2"
+    autocomplete="name"
+>
+
+                </p>
+
+                <p>
+                    <label for="email">Email Address</label>
+                    <input
+    type="email"
+    id="email"
+    name="email"
+    required
+    autocomplete="email"
+>
+                </p>
+                
+                <p> 
+                    <label for="user-role">Role</label>    
+                    <select id="user-role" name="user-role" required autocomplete="organization-title">
+                        <option value="">Select a role</option>
+                        <option value="admin">Administrator</option>
+                        <option value="manager">Manager</option>
+                        <option value="user">User</option>
+                    </select>
+                </p>
+
+                <button type="submit">Add User</button>
+                
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
+            <h3>User Actions</h3>
+
+            <button type="button" id="open-dialog">Open User Details</button>
+
+            <dialog
+    id="user-dialog"
+    aria-labelledby="dialog-title"
+    aria-describedby="dialog-description"
+>
+    <h3 id="dialog-title">User Details</h3>
+
+    <p id="dialog-description">
+        User details can be displayed here.
+    </p>
+
+                <button type="button" id="close-dialog">Close</button>
+            </dialog>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026  Enterprise Dashboard. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    </body>
+</html>

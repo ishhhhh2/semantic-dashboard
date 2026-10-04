@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 20px;
+    background-color: #1f2937;
+    color: white;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    margin-right: 20px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    grid-column: 1 / -1;
+}
+
+aside {
+    padding: 20px;
+    background-color: #f3f4f6;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside li {
+    margin-bottom: 12px;
+}
+
+main {
+    padding: 30px;
+}
+
+footer {
+    grid-column: 1 / -1;
+    padding: 15px;
+    text-align: center;
+    background-color: #e5e7eb;
+}
+
+.stat-card {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.stat-card h4 {
+    margin-top: 0;
+}
+
+.stat-card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+}
+
+form {
+    max-width: 600px;
+}
+
+fieldset {
+    padding: 20px;
+}
+
+fieldset p {
+    margin-bottom: 15px;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+}
+
+input,
+select {
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 8px 14px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+    body {
+        display: block;
+    }
+
+    aside {
+        padding: 15px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .stat-card {
+        display: block;
+        width: auto;
+        margin: 10px 0;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
